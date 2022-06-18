@@ -1,0 +1,22 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	display: table;
+}
+
+body {
+	margin: 0;
+
+	font-family: monospace;
+	font-size: 10vw;
+
+	background-color: black;
+	color: white;
+
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
