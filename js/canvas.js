@@ -114,8 +114,23 @@
 		requestAnimationFrame(update);
 	}
 
+	function start()
+	{
+		const canvas = document.getElementById("canvas");
+
+		/* Enable full screen on click */
+		canvas.addEventListener("click", function() {
+			if(document.fullscreenElement)
+				document.exitFullscreen();
+			else
+				canvas.requestFullscreen();
+		});
+
+		update(0);
+	}
+
 	if("loading" === document.readyState)
-		document.addEventListener("DOMContentLoaded", update);
+		document.addEventListener("DOMContentLoaded", start);
 	else
-		update();
+		start();
 })();
