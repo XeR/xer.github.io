@@ -1,0 +1,31 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	display: table;
+}
+
+body {
+	margin: 0;
+
+	font-family: monospace;
+	font-size: 10vw;
+
+	background-color: black;
+	color: red;
+
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+
+	animation-duration: 1.0s;
+	animation-name: blink;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+	from { opacity: 100%; }
+	to   { opacity:  80%; }
+}
